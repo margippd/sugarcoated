@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/sugarcoated/',
+    build: { outDir: 'docs' },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

@@ -6,30 +6,72 @@ import Logo from "./components/Logo";
 import { Product } from "./types";
 import { Sparkles, HelpCircle, Instagram, Heart, ArrowRight, Star } from "lucide-react";
 
+const PRODUCTS: Product[] = [
+  {
+    id: "sc-001",
+    name: "Cloud Nine Shorts",
+    price: 145,
+    category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/white_halter_shorts.jfif`,
+    images: [
+      `${import.meta.env.BASE_URL}images/white_halter_shorts_detail.jfif`,
+      `${import.meta.env.BASE_URL}images/white_halter_shorts_pose.jfif`,
+      `${import.meta.env.BASE_URL}images/white_halter_shorts.jfif`
+    ],
+    description: "An effortless matching set featuring a premium white cotton-ribbed halter tank top and crisp, high-waisted linen shorts with an elegant tie sash. Designed for sunny Athenian escapes.",
+    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
+    colors: ["White"],
+    sizes: ["XS", "S", "M", "L"],
+    features: ["Ribbed halter top", "Linen tie-sash shorts", "Functional side pockets"],
+    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-002",
+    name: "Azure Blue Mini Skirt",
+    price: 165,
+    category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/blue_floral_skirt.jfif`,
+    images: [
+      `${import.meta.env.BASE_URL}images/blue_floral_skirt.jfif`,
+      `${import.meta.env.BASE_URL}images/blue_floral_skirt_pose.jfif`,
+      `${import.meta.env.BASE_URL}images/blue_floral_skirt_detail.jfif`
+    ],
+    description: "A fresh and feminine pairing consisting of a delicate white cropped camisole with slender straps and a breathtaking blue-and-green floral printed mini skirt featuring flattering ruched detailing.",
+    material: "Silk-Rayon Blend Skirt, Cotton-Modal Top",
+    colors: ["White/Blue Floral"],
+    sizes: ["S", "M", "L"],
+    features: ["Ruched smocked skirt", "Cropped camisole top", "Adjustable straps"],
+    styleTip: "Pair with a straw bag and delicate gold jewelry for a beautiful brunch or seaside stroll.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-003",
+    name: "Rose Blossom Corset",
+    price: 185,
+    category: "Sets & Separates",
+    image: `${import.meta.env.BASE_URL}images/floral_corset_cargo.jfif`,
+    images: [
+      `${import.meta.env.BASE_URL}images/floral_corset_cargo.jfif`,
+      `${import.meta.env.BASE_URL}images/floral_corset_cargo_pose.jfif`,
+      `${import.meta.env.BASE_URL}images/floral_corset_cargo_detail.jfif`
+    ],
+    description: "A perfect blend of romance and modern edge. Features a beautifully structured strapless sweetheart corset in a vintage pink floral print, paired with rich olive green utility cargo trousers.",
+    material: "Sateen-Brocade Corset, Durable Cotton-Twill Cargo Trousers",
+    colors: ["Black/Pink Floral Top with Olive Cargo Trousers"],
+    sizes: ["XS", "S", "M", "L"],
+    features: ["Structured corset top", "Multi-pocket cargo trousers", "Comfortable relaxed fit pants"],
+    styleTip: "Style with clean white retro sneakers and small gold hoop earrings for the ultimate chic streetwear statement.",
+    isSoldOut: false
+  }
+];
+
 export default function App() {
-  const [products, setProducts] = React.useState<Product[]>([]);
-  const [loading, setLoading] = React.useState(true);
+  const [products] = React.useState<Product[]>(PRODUCTS);
+  const [loading] = React.useState(false);
   const [selectedProduct, setSelectedProduct] = React.useState<Product | null>(null);
 
   const productsSectionRef = React.useRef<HTMLDivElement | null>(null);
-
-  // 1. Fetch products from custom Express API
-  React.useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch("/api/products");
-        const data = await res.json();
-        if (data.success) {
-          setProducts(data.products);
-        }
-      } catch (err) {
-        console.error("Failed to load SugarCoated boutique items:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchProducts();
-  }, []);
 
   // Scroll to catalog helper
   const scrollToProducts = () => {
@@ -46,7 +88,7 @@ export default function App() {
         {/* Editorial Background Image matching the attached sugar-coated theme */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/sugar_coated_background.jpg"
+            src={`${import.meta.env.BASE_URL}images/sugar_coated_background.jpg`}
             alt="SugarCoated Background"
             className="w-full h-full object-cover filter brightness-[1.02] contrast-[0.98]"
             referrerPolicy="no-referrer"
@@ -66,7 +108,7 @@ export default function App() {
           </span>
 
           <p className="font-serif italic text-[17px] sm:text-[21px] text-neutral-800 max-w-2xl leading-relaxed mb-8 sm:mb-10 px-4">
-            "Curated elegance for every moment."
+            "Feminine styles for every occasion."
           </p>
 
           <div className="flex justify-center">
