@@ -26,7 +26,7 @@ export default function Logo({
     <div className="relative flex items-center justify-center">
       {/* Custom logo image loaded from the public folder */}
       <img
-        src="/logo.png"
+        src={`${import.meta.env.BASE_URL}logo.png`}
         alt="SugarCoated Logo"
         style={{
           width: `${variant === "monogram" ? size : size * 1.2}px`,
