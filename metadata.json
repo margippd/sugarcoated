@@ -1,0 +1,6 @@
+{
+  "name": "SugarCoated",
+  "description": "Premium, high-end, elegant fashion boutique presenting exclusive apparel with a luxurious aesthetic and gold accents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

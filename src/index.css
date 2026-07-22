@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Montserrat", sans-serif;
+
+  --color-gold-50: #fcfaf3;
+  --color-gold-100: #f5f0e1;
+  --color-gold-200: #ebe0c5;
+  --color-gold-300: #e0c796;
+  --color-gold-400: #d4b476;
+  --color-gold-500: #c5a059;
+  --color-gold-600: #ab8641;
+  --color-gold-700: #8f6c2f;
+
+  --color-burgundy-50: #f5f2ed;
+  --color-burgundy-100: #e8e4db;
+  --color-burgundy-200: #dfdad0;
+  --color-burgundy-300: #beb7aa;
+  --color-burgundy-400: #9c9487;
+  --color-burgundy-500: #787065;
+  --color-burgundy-600: #5c564e;
+  --color-burgundy-700: #423e38;
+  --color-burgundy-800: #2c2a26;
+  --color-burgundy-900: #1a1a1a;
+  --color-burgundy-950: #111111;
+}
+
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 0 0 10px rgba(197, 160, 89, 0.35);
+  }
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.015'/%3E%3C/svg%3E");
+  }
+}
+
+/* Elegant scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f2ed;
+}
+::-webkit-scrollbar-thumb {
+  background: #e8e4db;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+body {
+  background-color: #fcfaf7;
+  color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
