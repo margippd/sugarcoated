@@ -28,9 +28,9 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "sc-002",
-    name: "Cloud Nine Shorts",
+    name: "Capri Linen Dress",
     price: 0,
-    category: "Sets",
+    category: "Dresses",
     image: `${import.meta.env.BASE_URL}images/capri_linen_dress.jpg`,
     images: [
       `${import.meta.env.BASE_URL}images/capri_linen_dress.jpg`,
@@ -66,9 +66,9 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "sc-004",
-    name: "Cloud Nine Shorts",
+    name: "Rosalie Blouse",
     price: 0,
-    category: "Sets",
+    category: "Tops",
     image: `${import.meta.env.BASE_URL}images/rosalie_blouse.jpg`,
     images: [
       `${import.meta.env.BASE_URL}images/rosalie_blouse.jpg`,
@@ -128,9 +128,9 @@ const PRODUCTS: Product[] = [
   },
   {
     id: "sc-007",
-    name: "Cloud Nine Shorts",
+    name: "Élise Polka Dress",
     price: 0,
-    category: "Sets",
+    category: "Dresses",
     image: `${import.meta.env.BASE_URL}images/lise_polka_dress.jpg`,
     images: [
       `${import.meta.env.BASE_URL}images/lise_polka_dress.jpg`,
