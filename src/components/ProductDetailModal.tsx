@@ -91,10 +91,7 @@ export default function ProductDetailModal({
                 {product.name}
               </h2>
 
-              {/* Price */}
-              <div className="text-[14px] md:text-[15px] font-display text-neutral-500 tracking-[0.05em]">
-                €{product.price}
-              </div>
+
             </div>
 
             {/* Brief Description */}

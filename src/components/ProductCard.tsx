@@ -55,9 +55,6 @@ export default function ProductCard({
         <h3 className="font-display text-[11px] sm:text-[12px] text-neutral-900 uppercase tracking-[0.15em] font-medium leading-tight group-hover:text-neutral-500 transition-colors duration-300">
           {product.name}
         </h3>
-        <span className="font-display text-[10.5px] sm:text-[11.5px] text-neutral-500 tracking-[0.05em]">
-          €{product.price}
-        </span>
       </div>
     </div>
   );
