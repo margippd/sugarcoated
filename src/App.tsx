@@ -102,12 +102,12 @@ export default function App() {
           {/* Refined logo without container */}
           <Logo variant="full" color="burgundy" size={190} className="mb-2" />
 
-          {/* Elegant gold "Athens" subtitle displayed BELOW the logo */}
-          <span className="font-display uppercase tracking-[0.4em] text-[10.5px] sm:text-[11.5px] font-bold text-burgundy-900 mb-6 sm:mb-8 mt-1 flex items-center gap-2">
-            Boutique
+          {/* Athens subtitle */}
+          <span className="font-display uppercase tracking-[0.5em] text-[8.5px] sm:text-[9.5px] font-normal text-neutral-400 mt-2 mb-8 sm:mb-10">
+            Athens Boutique
           </span>
 
-          <p className="font-serif italic text-[17px] sm:text-[21px] text-neutral-800 max-w-2xl leading-relaxed mb-8 sm:mb-10 px-4">
+          <p className="font-serif italic text-[16px] sm:text-[20px] text-neutral-500 max-w-xl leading-relaxed mb-8 sm:mb-10 px-4">
             "Feminine styles for every occasion."
           </p>
 

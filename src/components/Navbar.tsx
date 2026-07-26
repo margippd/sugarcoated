@@ -46,10 +46,10 @@ export default function Navbar({
               onScrollToProducts();
               setMobileMenuOpen(false);
             }}
-            className="hover:text-gold-500 transition-all cursor-pointer relative py-1 group text-burgundy-950 font-bold"
+            className="hover:text-burgundy-900 transition-all cursor-pointer relative py-1 group text-burgundy-950/70 font-medium"
           >
             Collections
-            <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-gold-300 transition-all duration-300 group-hover:w-full" />
+            <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-burgundy-900 transition-all duration-300 group-hover:w-full" />
           </button>
           <span className="text-burgundy-950/60 select-none py-1">
             Athens
@@ -70,7 +70,7 @@ export default function Navbar({
             href="https://www.instagram.com/sugar_coated.gr"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-2 px-4 py-2 rounded-full border border-gold-200 bg-[#fcfaf3] hover:bg-gold-50 transition-all duration-300 text-[11px] font-display uppercase tracking-widest text-gold-700 font-bold cursor-pointer"
+            className="hidden md:flex items-center gap-2 text-[10px] font-display uppercase tracking-widest text-neutral-500 hover:text-burgundy-900 transition-colors duration-300 cursor-pointer"
           >
             <Instagram size={13} className="text-gold-600" />
             @sugar_coated.gr

@@ -82,31 +82,11 @@ export default function Logo({
         SUGARCOATED
       </h1>
 
-      {/* Underline Sparkle Divider */}
-      <div className="flex items-center w-full max-w-[260px] mt-2 opacity-80 gap-4">
-        <div
-          className="h-[1px] flex-1"
-          style={{
-            backgroundImage: `linear-gradient(to right, transparent, ${color === "burgundy" ? "#c5a059" : activeColor})`,
-          }}
-        />
-        {/* 4-point Sparkle Icon (Refined Instagram screen graphic) */}
-        <svg
-          viewBox="0 0 24 24"
-          width="15"
-          height="15"
-          fill="none"
-          stroke={color === "burgundy" ? "#c5a059" : activeColor}
-          strokeWidth="2.5"
-        >
-          <path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill={color === "burgundy" ? "#c5a059" : activeColor} />
-        </svg>
-        <div
-          className="h-[1px] flex-1"
-          style={{
-            backgroundImage: `linear-gradient(to left, transparent, ${color === "burgundy" ? "#c5a059" : activeColor})`,
-          }}
-        />
+      {/* Refined thin rule */}
+      <div className="flex items-center gap-2.5 mt-3 opacity-40">
+        <div className="h-px w-10 bg-neutral-500" />
+        <div className="w-1 h-1 rounded-full bg-neutral-500" />
+        <div className="h-px w-10 bg-neutral-500" />
       </div>
     </div>
   );
