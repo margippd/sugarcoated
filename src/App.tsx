@@ -93,7 +93,7 @@ const PRODUCTS: Product[] = [
     images: [
       `${import.meta.env.BASE_URL}images/rose_blossom_corset_1.jfif`,
       `${import.meta.env.BASE_URL}images/rose_blossom_corset_2.jfif`,
-      `${import.meta.env.BASE_URL}images/rose_blossom_corset_3.jfif`
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_a3.jfif`
     ],
     description: "A perfect blend of romance and modern edge. Features a beautifully structured strapless sweetheart corset in a vintage pink floral print, paired with rich olive green utility cargo trousers.",
     material: "Sateen-Brocade Corset, Durable Cotton-Twill Cargo Trousers",
