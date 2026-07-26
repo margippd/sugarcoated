@@ -107,7 +107,7 @@ const PRODUCTS: Product[] = [
     id: "sc-006",
     name: "Solea Dress",
     price: 0,
-    category: "Sets",
+    category: "Dresses",
     image: `${import.meta.env.BASE_URL}images/solea_dress.jpg`,
     images: [
       `${import.meta.env.BASE_URL}images/solea_dress.jpg`,
