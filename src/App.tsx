@@ -134,8 +134,6 @@ const PRODUCTS: Product[] = [
     image: `${import.meta.env.BASE_URL}images/lise_polka_dress_aimg_3578.jpg`,
     images: [
       `${import.meta.env.BASE_URL}images/lise_polka_dress_aimg_3578.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3574.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3575.jpg`,
       `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3576.jpg`,
       `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3577.jpg`,
       `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3579.jpg`
