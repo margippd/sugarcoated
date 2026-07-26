@@ -12,11 +12,11 @@ const PRODUCTS: Product[] = [
     name: "Azure Blue Mini Skirt",
     price: 0,
     category: "Sets",
-    image: `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt.jfif`,
+    image: `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_1.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt.jfif`,
       `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_1.jfif`,
-      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_2.jfif`
+      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_2.jfif`,
+      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_3.jfif`
     ],
     description: "A fresh and feminine pairing consisting of a delicate white cropped camisole with slender straps and a breathtaking blue-and-green floral printed mini skirt featuring flattering ruched detailing.",
     material: "Silk-Rayon Blend Skirt, Cotton-Modal Top",
@@ -31,11 +31,11 @@ const PRODUCTS: Product[] = [
     name: "Capri Linen Dress",
     price: 0,
     category: "Dresses",
-    image: `${import.meta.env.BASE_URL}images/capri_linen_dress.jpg`,
+    image: `${import.meta.env.BASE_URL}images/capri_linen_dress_img_3591.jpg`,
     images: [
-      `${import.meta.env.BASE_URL}images/capri_linen_dress.jpg`,
-      `${import.meta.env.BASE_URL}images/capri_linen_dress_1.jpg`,
-      `${import.meta.env.BASE_URL}images/capri_linen_dress_2.jpg`
+      `${import.meta.env.BASE_URL}images/capri_linen_dress_img_3591.jpg`,
+      `${import.meta.env.BASE_URL}images/capri_linen_dress_img_3592.jpg`,
+      `${import.meta.env.BASE_URL}images/capri_linen_dress_img_3593.jpg`
     ],
     description: "An elegant linen maxi dress featuring a plunging V-neckline, contrasting black trim, and a flattering A-line silhouette. Designed with a timeless minimalist aesthetic, it’s the perfect choice for effortless summer elegance, from daytime outings to evening occasions. ✨",
     material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
@@ -50,11 +50,11 @@ const PRODUCTS: Product[] = [
     name: "Cloud Nine Shorts",
     price: 0,
     category: "Sets",
-    image: `${import.meta.env.BASE_URL}images/cloud_nine_shorts.jfif`,
+    image: `${import.meta.env.BASE_URL}images/cloud_nine_shorts_1.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/cloud_nine_shorts.jfif`,
       `${import.meta.env.BASE_URL}images/cloud_nine_shorts_1.jfif`,
-      `${import.meta.env.BASE_URL}images/cloud_nine_shorts_2.jfif`
+      `${import.meta.env.BASE_URL}images/cloud_nine_shorts_2.jfif`,
+      `${import.meta.env.BASE_URL}images/cloud_nine_shorts_3.jfif`
     ],
     description: "An effortless matching set featuring a premium white cotton-ribbed halter tank top and crisp, high-waisted linen shorts with an elegant tie sash. Designed for sunny Athenian escapes.",
     material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
@@ -69,12 +69,12 @@ const PRODUCTS: Product[] = [
     name: "Rosalie Blouse",
     price: 0,
     category: "Tops",
-    image: `${import.meta.env.BASE_URL}images/rosalie_blouse.jpg`,
+    image: `${import.meta.env.BASE_URL}images/rosalie_blouse_img_3580.jpg`,
     images: [
-      `${import.meta.env.BASE_URL}images/rosalie_blouse.jpg`,
-      `${import.meta.env.BASE_URL}images/rosalie_blouse_1.jpg`,
-      `${import.meta.env.BASE_URL}images/rosalie_blouse_2.jpg`,
-      `${import.meta.env.BASE_URL}images/rosalie_blouse_3.jpg`
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_img_3580.jpg`,
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_img_3581.jpg`,
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_img_3582.jpg`,
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_img_3583.jpg`
     ],
     description: "A feminine floral blouse featuring a romantic rose print, rounded neckline, and voluminous puff sleeves. Its flattering cropped silhouette makes it perfect for pairing with high-waisted jeans or skirts for an effortlessly chic look. 🌸",
     material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
@@ -89,11 +89,11 @@ const PRODUCTS: Product[] = [
     name: "Rose Blossom Corset",
     price: 0,
     category: "Sets & Separates",
-    image: `${import.meta.env.BASE_URL}images/rose_blossom_corset.jfif`,
+    image: `${import.meta.env.BASE_URL}images/rose_blossom_corset_1.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/rose_blossom_corset.jfif`,
       `${import.meta.env.BASE_URL}images/rose_blossom_corset_1.jfif`,
-      `${import.meta.env.BASE_URL}images/rose_blossom_corset_2.jfif`
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_2.jfif`,
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_3.jfif`
     ],
     description: "A perfect blend of romance and modern edge. Features a beautifully structured strapless sweetheart corset in a vintage pink floral print, paired with rich olive green utility cargo trousers.",
     material: "Sateen-Brocade Corset, Durable Cotton-Twill Cargo Trousers",
@@ -108,15 +108,15 @@ const PRODUCTS: Product[] = [
     name: "Solea Dress",
     price: 0,
     category: "Dresses",
-    image: `${import.meta.env.BASE_URL}images/solea_dress.jpg`,
+    image: `${import.meta.env.BASE_URL}images/solea_dress_img_3584.jpg`,
     images: [
-      `${import.meta.env.BASE_URL}images/solea_dress.jpg`,
-      `${import.meta.env.BASE_URL}images/solea_dress_1.jpg`,
-      `${import.meta.env.BASE_URL}images/solea_dress_2.jpg`,
-      `${import.meta.env.BASE_URL}images/solea_dress_3.jpg`,
-      `${import.meta.env.BASE_URL}images/solea_dress_4.jpg`,
-      `${import.meta.env.BASE_URL}images/solea_dress_5.jpg`,
-      `${import.meta.env.BASE_URL}images/solea_dress_6.jpg`
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3584.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3585.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3586.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3587.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3588.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3589.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_img_3590.jpg`
     ],
     description: "The Solea Dress combines timeless elegance with effortless summer style. Featuring a flattering midi length, round neckline, and fitted silhouette, it beautifully enhances the figure while offering a comfortable, stretchy fit. The textured, finely detailed fabric adds a sophisticated touch, making it perfect for summer evenings, holidays, seaside dinners, and resort occasions.A versatile statement piece that effortlessly transitions from daytime chic to elegant evening wear. ✨",
     material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
@@ -131,14 +131,14 @@ const PRODUCTS: Product[] = [
     name: "Élise Polka Dress",
     price: 0,
     category: "Dresses",
-    image: `${import.meta.env.BASE_URL}images/lise_polka_dress.jpg`,
+    image: `${import.meta.env.BASE_URL}images/lise_polka_dress_aimg_3578.jpg`,
     images: [
-      `${import.meta.env.BASE_URL}images/lise_polka_dress.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_1.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_2.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_3.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_4.jpg`,
-      `${import.meta.env.BASE_URL}images/lise_polka_dress_5.jpg`
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_aimg_3578.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3574.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3575.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3576.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3577.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_img_3579.jpg`
     ],
     description: "A feminine mini dress featuring a flattering V-neckline, delicate bust tie, and an adjustable open back. Crafted from lightweight textured polka-dot fabric, with slim straps for a comfortable fit. Romantic, effortless, and perfect for summer days, holidays, and evening occasions. ✨",
     material: "100% Organic Cotton Top, 100% Premium Linen Shorts",

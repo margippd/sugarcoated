@@ -117,7 +117,8 @@ for (const folderName of productFolders) {
 
   for (let i = 0; i < imageFiles.length; i++) {
     const ext = path.extname(imageFiles[i]);
-    const destName = i === 0 ? `${slug}${ext}` : `${slug}_${i}${ext}`;
+    const baseName = slugify(path.basename(imageFiles[i], ext));
+    const destName = `${slug}_${baseName}${ext}`;
     fs.copyFileSync(
       path.join(folderPath, imageFiles[i]),
       path.join(PUBLIC_IMAGES, destName)
