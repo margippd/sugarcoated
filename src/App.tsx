@@ -9,40 +9,40 @@ import { Sparkles, HelpCircle, Instagram, Heart, ArrowRight, Star } from "lucide
 const PRODUCTS: Product[] = [
   {
     id: "sc-001",
-    name: "Cloud Nine Shorts",
-    price: 0,
-    category: "Sets",
-    image: `${import.meta.env.BASE_URL}images/white_halter_shorts.jfif`,
-    images: [
-      `${import.meta.env.BASE_URL}images/white_halter_shorts_detail.jfif`,
-      `${import.meta.env.BASE_URL}images/white_halter_shorts_pose.jfif`,
-      `${import.meta.env.BASE_URL}images/white_halter_shorts.jfif`
-    ],
-    description: "An effortless matching set featuring a premium white cotton-ribbed halter tank top and crisp, high-waisted linen shorts with an elegant tie sash. Designed for sunny Athenian escapes.",
-    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
-    colors: ["White"],
-    sizes: ["XS", "S", "M", "L"],
-    features: ["Ribbed halter top", "Linen tie-sash shorts", "Functional side pockets"],
-    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
-    isSoldOut: false
-  },
-  {
-    id: "sc-002",
     name: "Azure Blue Mini Skirt",
     price: 0,
     category: "Sets",
-    image: `${import.meta.env.BASE_URL}images/blue_floral_skirt.jfif`,
+    image: `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/blue_floral_skirt.jfif`,
-      `${import.meta.env.BASE_URL}images/blue_floral_skirt_pose.jfif`,
-      `${import.meta.env.BASE_URL}images/blue_floral_skirt_detail.jfif`
+      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt.jfif`,
+      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_1.jfif`,
+      `${import.meta.env.BASE_URL}images/azure_blue_mini_skirt_2.jfif`
     ],
     description: "A fresh and feminine pairing consisting of a delicate white cropped camisole with slender straps and a breathtaking blue-and-green floral printed mini skirt featuring flattering ruched detailing.",
     material: "Silk-Rayon Blend Skirt, Cotton-Modal Top",
     colors: ["White/Blue Floral"],
-    sizes: ["S", "M", "L"],
-    features: ["Ruched smocked skirt", "Cropped camisole top", "Adjustable straps"],
+    sizes: ["S","M","L"],
+    features: ["Ruched smocked skirt","Cropped camisole top","Adjustable straps"],
     styleTip: "Pair with a straw bag and delicate gold jewelry for a beautiful brunch or seaside stroll.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-002",
+    name: "Cloud Nine Shorts",
+    price: 0,
+    category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/cloud_nine_shorts.jfif`,
+    images: [
+      `${import.meta.env.BASE_URL}images/cloud_nine_shorts.jfif`,
+      `${import.meta.env.BASE_URL}images/cloud_nine_shorts_1.jfif`,
+      `${import.meta.env.BASE_URL}images/cloud_nine_shorts_2.jfif`
+    ],
+    description: "An effortless matching set featuring a premium white cotton-ribbed halter tank top and crisp, high-waisted linen shorts with an elegant tie sash. Designed for sunny Athenian escapes.",
+    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
+    colors: ["White"],
+    sizes: ["XS","S","M","L"],
+    features: ["Ribbed halter top","Linen tie-sash shorts","Functional side pockets"],
+    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
     isSoldOut: false
   },
   {
@@ -50,22 +50,21 @@ const PRODUCTS: Product[] = [
     name: "Rose Blossom Corset",
     price: 0,
     category: "Sets & Separates",
-    image: `${import.meta.env.BASE_URL}images/floral_corset_cargo.jfif`,
+    image: `${import.meta.env.BASE_URL}images/rose_blossom_corset.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/floral_corset_cargo.jfif`,
-      `${import.meta.env.BASE_URL}images/floral_corset_cargo_pose.jfif`,
-      `${import.meta.env.BASE_URL}images/floral_corset_cargo_detail.jfif`
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset.jfif`,
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_1.jfif`,
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_2.jfif`
     ],
     description: "A perfect blend of romance and modern edge. Features a beautifully structured strapless sweetheart corset in a vintage pink floral print, paired with rich olive green utility cargo trousers.",
     material: "Sateen-Brocade Corset, Durable Cotton-Twill Cargo Trousers",
     colors: ["Black/Pink Floral Top with Olive Cargo Trousers"],
-    sizes: ["XS", "S", "M", "L"],
-    features: ["Structured corset top", "Multi-pocket cargo trousers", "Comfortable relaxed fit pants"],
+    sizes: ["XS","S","M","L"],
+    features: ["Structured corset top","Multi-pocket cargo trousers","Comfortable relaxed fit pants"],
     styleTip: "Style with clean white retro sneakers and small gold hoop earrings for the ultimate chic streetwear statement.",
     isSoldOut: false
   }
 ];
-
 export default function App() {
   const [products] = React.useState<Product[]>(PRODUCTS);
   const [loading] = React.useState(false);
