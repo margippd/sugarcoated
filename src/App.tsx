@@ -31,6 +31,25 @@ const PRODUCTS: Product[] = [
     name: "Cloud Nine Shorts",
     price: 0,
     category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/capri_linen_dress.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}images/capri_linen_dress.jpg`,
+      `${import.meta.env.BASE_URL}images/capri_linen_dress_1.jpg`,
+      `${import.meta.env.BASE_URL}images/capri_linen_dress_2.jpg`
+    ],
+    description: "An elegant linen maxi dress featuring a plunging V-neckline, contrasting black trim, and a flattering A-line silhouette. Designed with a timeless minimalist aesthetic, it’s the perfect choice for effortless summer elegance, from daytime outings to evening occasions. ✨",
+    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
+    colors: ["White"],
+    sizes: ["XS","S","M","L"],
+    features: ["Ribbed halter top","Linen tie-sash shorts","Functional side pockets"],
+    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-003",
+    name: "Cloud Nine Shorts",
+    price: 0,
+    category: "Sets",
     image: `${import.meta.env.BASE_URL}images/cloud_nine_shorts.jfif`,
     images: [
       `${import.meta.env.BASE_URL}images/cloud_nine_shorts.jfif`,
@@ -46,7 +65,27 @@ const PRODUCTS: Product[] = [
     isSoldOut: false
   },
   {
-    id: "sc-003",
+    id: "sc-004",
+    name: "Cloud Nine Shorts",
+    price: 0,
+    category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/rosalie_blouse.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}images/rosalie_blouse.jpg`,
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_1.jpg`,
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_2.jpg`,
+      `${import.meta.env.BASE_URL}images/rosalie_blouse_3.jpg`
+    ],
+    description: "A feminine floral blouse featuring a romantic rose print, rounded neckline, and voluminous puff sleeves. Its flattering cropped silhouette makes it perfect for pairing with high-waisted jeans or skirts for an effortlessly chic look. 🌸",
+    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
+    colors: ["White"],
+    sizes: ["XS","S","M","L"],
+    features: ["Ribbed halter top","Linen tie-sash shorts","Functional side pockets"],
+    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-005",
     name: "Rose Blossom Corset",
     price: 0,
     category: "Sets & Separates",
@@ -62,6 +101,51 @@ const PRODUCTS: Product[] = [
     sizes: ["XS","S","M","L"],
     features: ["Structured corset top","Multi-pocket cargo trousers","Comfortable relaxed fit pants"],
     styleTip: "Style with clean white retro sneakers and small gold hoop earrings for the ultimate chic streetwear statement.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-006",
+    name: "Solea Dress",
+    price: 0,
+    category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/solea_dress.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}images/solea_dress.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_1.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_2.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_3.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_4.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_5.jpg`,
+      `${import.meta.env.BASE_URL}images/solea_dress_6.jpg`
+    ],
+    description: "The Solea Dress combines timeless elegance with effortless summer style. Featuring a flattering midi length, round neckline, and fitted silhouette, it beautifully enhances the figure while offering a comfortable, stretchy fit. The textured, finely detailed fabric adds a sophisticated touch, making it perfect for summer evenings, holidays, seaside dinners, and resort occasions.A versatile statement piece that effortlessly transitions from daytime chic to elegant evening wear. ✨",
+    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
+    colors: ["White"],
+    sizes: ["XS","S","M","L"],
+    features: ["Ribbed halter top","Linen tie-sash shorts","Functional side pockets"],
+    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
+    isSoldOut: false
+  },
+  {
+    id: "sc-007",
+    name: "Cloud Nine Shorts",
+    price: 0,
+    category: "Sets",
+    image: `${import.meta.env.BASE_URL}images/lise_polka_dress.jpg`,
+    images: [
+      `${import.meta.env.BASE_URL}images/lise_polka_dress.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_1.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_2.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_3.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_4.jpg`,
+      `${import.meta.env.BASE_URL}images/lise_polka_dress_5.jpg`
+    ],
+    description: "A feminine mini dress featuring a flattering V-neckline, delicate bust tie, and an adjustable open back. Crafted from lightweight textured polka-dot fabric, with slim straps for a comfortable fit. Romantic, effortless, and perfect for summer days, holidays, and evening occasions. ✨",
+    material: "100% Organic Cotton Top, 100% Premium Linen Shorts",
+    colors: ["White"],
+    sizes: ["XS","S","M","L"],
+    features: ["Ribbed halter top","Linen tie-sash shorts","Functional side pockets"],
+    styleTip: "Wear with elegant leather sandals and gold-rimmed sunglasses for a chic, sophisticated coastal look.",
     isSoldOut: false
   }
 ];

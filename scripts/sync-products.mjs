@@ -151,14 +151,18 @@ const newBlock = `const PRODUCTS: Product[] = [\n${products.map(generateEntry).j
 
 let app = fs.readFileSync(APP_TSX, 'utf-8');
 const startIdx = app.indexOf('const PRODUCTS: Product[]');
-const endIdx   = app.indexOf('];\n\nexport default', startIdx);
+// Find the closing ];\n that ends the array (works with or without blank line after it)
+const endMarker = app.indexOf('\nexport default', startIdx);
 
-if (startIdx === -1 || endIdx === -1) {
+if (startIdx === -1 || endMarker === -1) {
   console.error('\n❌  Could not locate the PRODUCTS array in src/App.tsx\n');
   process.exit(1);
 }
 
-fs.writeFileSync(APP_TSX, app.slice(0, startIdx) + newBlock + app.slice(endIdx + 3), 'utf-8');
+// Walk back from endMarker to include the ];\n
+const endIdx = app.lastIndexOf('];', endMarker) + 2; // +2 to include ']' and ';'
+
+fs.writeFileSync(APP_TSX, app.slice(0, startIdx) + newBlock + '\n' + app.slice(endIdx + 1), 'utf-8');
 
 console.log(`\n✅  Synced ${products.length} product(s) → src/App.tsx`);
 console.log('\n👉  Next steps:');
