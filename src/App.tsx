@@ -10,7 +10,7 @@ const PRODUCTS: Product[] = [
   {
     id: "sc-001",
     name: "Cloud Nine Shorts",
-    price: 145,
+    price: -,
     category: "Sets",
     image: `${import.meta.env.BASE_URL}images/white_halter_shorts.jfif`,
     images: [
@@ -29,11 +29,11 @@ const PRODUCTS: Product[] = [
   {
     id: "sc-002",
     name: "Azure Blue Mini Skirt",
-    price: 165,
+    price: -,
     category: "Sets",
     image: `${import.meta.env.BASE_URL}images/blue_floral_skirt.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/blue_floral_skirt.jfif`,
+      `${import.meta.en ASE_URL}images/blue_floral_skirt.jfif`,
       `${import.meta.env.BASE_URL}images/blue_floral_skirt_pose.jfif`,
       `${import.meta.env.BASE_URL}images/blue_floral_skirt_detail.jfif`
     ],
@@ -48,7 +48,7 @@ const PRODUCTS: Product[] = [
   {
     id: "sc-003",
     name: "Rose Blossom Corset",
-    price: 185,
+    price: -,
     category: "Sets & Separates",
     image: `${import.meta.env.BASE_URL}images/floral_corset_cargo.jfif`,
     images: [
