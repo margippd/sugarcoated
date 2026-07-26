@@ -89,11 +89,11 @@ const PRODUCTS: Product[] = [
     name: "Rose Blossom Corset",
     price: 0,
     category: "Sets & Separates",
-    image: `${import.meta.env.BASE_URL}images/rose_blossom_corset_1.jfif`,
+    image: `${import.meta.env.BASE_URL}images/rose_blossom_corset_a3.jfif`,
     images: [
-      `${import.meta.env.BASE_URL}images/rose_blossom_corset_1.jfif`,
-      `${import.meta.env.BASE_URL}images/rose_blossom_corset_2.jfif`,
-      `${import.meta.env.BASE_URL}images/rose_blossom_corset_a3.jfif`
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_a3.jfif`,
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_b1.jfif`,
+      `${import.meta.env.BASE_URL}images/rose_blossom_corset_c2.jfif`
     ],
     description: "A perfect blend of romance and modern edge. Features a beautifully structured strapless sweetheart corset in a vintage pink floral print, paired with rich olive green utility cargo trousers.",
     material: "Sateen-Brocade Corset, Durable Cotton-Twill Cargo Trousers",
